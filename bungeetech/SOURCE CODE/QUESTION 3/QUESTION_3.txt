@@ -1,0 +1,13 @@
+QUESTION 3
+
+import pandas as pd
+import numpy as np
+euro = pd.read_csv("main.csv")
+euro
+euro.Goals
+euro.Team.nunique()
+euro.shape[1]
+discipline = euro[['Team', 'Yellow Cards', 'Red Cards']]
+discipline
+discipline.sort_values(by=['Red Cards', 'Yellow Cards'], inplace = True)
+discipline
